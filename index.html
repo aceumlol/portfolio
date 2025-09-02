@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aceum - Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/julianooo.svg" alt="Logo Juliano" width="24" height="24">
+                <a href="https://github.com/aceum" target="_blank">github.com/aceum</a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <ul id="primary-navigation" data-visible="false">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li>
+                    <a href="contact.html" class="nav-contact-button">
+                        <i class="fa-solid fa-paper-plane"></i><span>Contact me</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class="hello-container">
+            <div class="hello-text">
+                <h1>Hello, <span>I am</span></h1>
+                <div class="animation-container">
+                    <span id="typed-element"></span>
+                </div>
+
+                <div class="hello-paragraphs-wrapper">
+                    <p>Stats nerd, full of ideas, probably still overthinking games from 2022.</p>
+                    <p><span class="rainbow-text">I build tools that help, not just exist</span> — from KPI dashboards, through <br>custom Fearless points, to Counter & Synergies database.</p>
+                    <p>Bring me in, and I'll bring the <span class="quote-text">"why did we not have this before?"</span> energy.</p>
+                </div>
+                <div class="hello-buttons">
+                    <a href="contact.html" class="contact-button">
+                        <i class="fa-solid fa-paper-plane"></i><span>Contact me</span>
+                    </a>
+                    <a href="work.html" class="work-button">
+                        <i class="fa-solid fa-briefcase"></i><span>My Work</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hello-image">
+                <div class="picture-placeholder">
+                    <p>picture<br>placeholder</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
