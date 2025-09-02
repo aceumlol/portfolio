@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aceum - Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/julianooo.svg" alt="Logo Juliano" width="24" height="24">
+                <a href="https://github.com/aceum" target="_blank">github.com/aceumlol</a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <ul id="primary-navigation" data-visible="false">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li>
+                    <a href="contact.html" class="nav-contact-button">
+                        <i class="fa-solid fa-paper-plane"></i><span>Contact me</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="work-main">
+        <div class="work-container">
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="spreadsheets">Spreadsheets</button>
+                <button class="filter-btn" data-filter="presentations">Presentations</button>
+<!--            <button class="filter-btn" data-filter="photoshop">Photoshop</button>            --> 
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <div class="work-grid">
+
+<!-- SPREADSHEETS -->
+                <div class="work-item" data-category="spreadsheets">
+                    <img src="works/spreadsheets/SoloQ/Image1.jpg" alt="SoloQ Tracker">
+                    <div class="overlay">
+                        <h3>SoloQ Tracker</h3>
+                        <a href="#" class="preview-btn" data-modal-target="SoloQ">Preview</a>
+                    </div>
+                </div> 
+                
+                <div class="work-item" data-category="spreadsheets">
+                    <img src="works/spreadsheets/DraftingTool/Image1.jpg" alt="Drafting Tool">
+                    <div class="overlay">
+                        <h3>Drafting Tool</h3>
+                        <a href="#" class="preview-btn" data-modal-target="DraftingTool">Preview</a>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-category="spreadsheets">
+                    <img src="https://placehold.co/600x400/1a1a2e/dcdbe1?text=Scrim Tracker" alt="Scrim Tracker">
+                    <div class="overlay">
+                        <h3>Scrim Tracker</h3>
+                        <a href="#" class="preview-btn" data-modal-target="ScrimTracker">Preview</a>
+                    </div>
+                </div>  
+
+                <div class="work-item" data-category="spreadsheets">
+                    <img src="https://placehold.co/600x400/1a1a2e/dcdbe1?text=Fearless Points" alt="Fearless Points">
+                    <div class="overlay">
+                        <h3>Fearless Points</h3>
+                        <a href="#" class="preview-btn" data-modal-target="FearlessPoints">Preview</a>
+                    </div>
+                </div>                  
+
+                <div class="work-item" data-category="spreadsheets">
+                    <img src="works/spreadsheets/CounterSynergy/Image1.jpg" alt="Counter Synergy Database">
+                    <div class="overlay">
+                        <h3>Counter Synergy Database</h3>
+                        <a href="#" class="preview-btn" data-modal-target="CounterSynergy">Preview</a>
+                    </div>
+                </div>  
+
+
+<!-- PRESENTATIONS -->
+                <div class="work-item" data-category="presentations">
+                    <img src="works/presentations/FNCScouting.jpg" alt="Fnatic 2024 LEC Finals Scouting">
+                    <div class="overlay">
+                        <h3>Fnatic Scouting</h3>
+                        <a href="https://docs.google.com/presentation/d/1A7H04uVF1SZh36aDKfOTvcyRVNcsArEx_Eah375DqOE/edit?usp=sharing" class="preview-btn" target="_blank">Preview</a>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="presentations">
+                    <img src="works/presentations/AhriNeekoMatchup.jpg" alt="Ahri Neeko Matchup">
+                    <div class="overlay">
+                        <h3>Ahri vs Neeko Matchup Analysis</h3>
+                        <a href="https://docs.google.com/presentation/d/14a7yZdk7JN6XuMp49DR1FE-wvltYRdvDyCi0amaRLx8/edit?usp=sharing" class="preview-btn" target="_blank">Preview</a>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-category="presentations">
+                    <img src="works/presentations/S15Changes.jpg" alt="S15 Changes Report">
+                    <div class="overlay">
+                        <h3>S15 Changes Report</h3>
+                        <a href="https://docs.google.com/presentation/d/1s4EEGYw1My4sbvKPwL54AhZdVVzrv6NmqpcUJmDfFHY/edit?usp=sharing" class="preview-btn" target="_blank">Preview</a>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="presentations">
+                    <img src="works/presentations/KCBScouting.jpg" alt="KCB EUM Scouting">
+                    <div class="overlay">
+                        <h3>KCB EUM Scouting</h3>
+                        <a href="https://docs.google.com/presentation/d/13KNwwmXV6tlCQq5D_cWWyzbSmd3MMUT8QyRS7dC70Xg/edit?usp=sharing" class="preview-btn" target="_blank">Preview</a>
+                    </div>
+                </div>                
+
+                <div class="work-item" data-category="presentations">
+                    <img src="works/presentations/AHisFake.jpg" alt="Gold Efficiency for AH is fake">
+                    <div class="overlay">
+                        <h3>Gold Efficiency for AH is fake</h3>
+                        <a href="link" class="preview-btn" target="_blank">Preview</a>
+                    </div>
+                </div> 
+
+<!-- PHOTOSHOP -->
+                <div class="work-item" data-category="photoshop">
+                    <img src="https://placehold.co/600x400/1a1a2e/dcdbe1?text=Photoshop" alt="Photoshop coski">
+                    <div class="overlay">
+                        <h3>Photoshop Graphics</h3>
+                        <a href="#" class="preview-btn" data-modal-target="Mapka">Preview</a>
+                    </div>
+                </div>
+
+<!-- OTHER -->
+                <div class="work-item" data-category="other">
+                    <img src="works/other/TaskApp/Image1.jpg" alt="Task App">
+                    <div class="overlay">
+                        <h3>Task App</h3>
+                        <a href="#" class="preview-btn" data-modal-target="TaskApp">Preview</a>
+                    </div>
+                </div>
+
+
+<!-- END -->
+                </div>
+        </div>
+    </main>
+
+
+
+<!-- Fearless LINKED -->  
+    <div id="Fearless" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="https://placehold.co/800x500/4c4766/f8f9fa?text=Screenshot+1" alt="Screenshot 1" class="active-slide">
+                        <img src="https://placehold.co/800x500/3a364d/f8f9fa?text=Screenshot+2" alt="Screenshot 2">
+                        <img src="https://placehold.co/800x500/aa5dc8/f8f9fa?text=Screenshot+3" alt="Screenshot 3">
+                    </div>
+                    <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-details">
+                    <h2>Fearless Points System</h2>
+                    <p>desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc.</p>
+                    <a href="https://example.com/project-link" class="modal-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a> <!-- del -->  
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Fearless LINKED -->  
+
+<!-- SoloQ NOT LINKED -->  
+    <div id="SoloQ" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="works/spreadsheets/SoloQ/Image1.jpg" alt="Screenshot 1" class="active-slide">
+                        <img src="works/spreadsheets/SoloQ/Image2.jpg" alt="Screenshot 2">
+                        <img src="works/spreadsheets/SoloQ/Image3.jpg" alt="Screenshot 3">
+                        <img src="works/spreadsheets/SoloQ/Image4.jpg" alt="Screenshot 4">
+                    </div>
+                    <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-details">
+                    <h2>SoloQ Tracker</h2>
+                    <p>
+                        Automated dashboard with team's SoloQ performance</p>
+
+                    <p><br>Key Features:<br>
+                            • Auto-refreshes every 5 minutes<br>
+                            • Weekly Team Recap with a quick summary of the team's week - current ranks, and champion recap<br>
+                            • Player pages with an option to display data as Match History, Summary or Match Ups<br>
+                            • Table summarizing all-champion stats and comparing it to average opponent performance<br>
+                            • Option to switch between Farming or Utility based stats</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- SoloQ NOT LINKED -->  
+
+<!-- CounterSynergy NOT LINKED -->  
+    <div id="CounterSynergy" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="works/spreadsheets/CounterSynergy/Image1.jpg" alt="Screenshot 1" class="active-slide">
+                        <img src="works/spreadsheets/CounterSynergy/Image2.jpg" alt="Screenshot 2">
+                    </div>
+                    <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-details">
+                    <h2>Matchup & Synergy Database</h2>
+
+                    <p>This tool lets you search through all games to check statistics (WR%/Games) for specific draft combinations. It shows all champion pairings related to given champion(s) and allows you to access the VOD when filtering for individual games.</p>
+
+                    <p>Based on Tier 1 games since 2023.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- CounterSynergy NOT LINKED -->
+
+<!-- DraftTool NOT LINKED -->  
+    <div id="DraftingTool" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="works/spreadsheets/DraftingTool/Image1.jpg" alt="Screenshot 1" class="active-slide">
+                        <img src="works/spreadsheets/DraftingTool/Image2.jpg" alt="Screenshot 2">
+                        <img src="works/spreadsheets/DraftingTool/Image3.jpg" alt="Screenshot 3">
+                        <img src="works/spreadsheets/DraftingTool/Image4.jpg" alt="Screenshot 4">
+                    </div>
+                    <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-details">
+                    <h2>Drafting Tool</h2>
+
+                    <p>A tool for analyzing historical game drafts. It allows to input one or more champions into any pick/ban position to find similar or identical drafts. You can adjust a similarity setting to control how closely the results match your query.</p>
+                    <p>Additionally, second tab 'Phases' shows how a specific pick influences every subsequent choice in the draft.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- DraftTool NOT LINKED -->  
+
+<!-- Mapka NO LINK -->  
+    <div id="Mapka" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="https://placehold.co/800x500/ff63c3/1a1a2e?text=Single+Image" alt="Single Screenshot" class="active-slide">
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2>Mapka Photoshopowa uwu</h2>
+                    <p>desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc .</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- Mapka NO LINK --> 
+
+<!-- Task App -->  
+    <div id="TaskApp" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="slider-images">
+                        <img src="works/other/TaskApp/Image1.jpg" alt="Screenshot 1" class="active-slide">
+                        <img src="works/other/TaskApp/Image2.jpg" alt="Screenshot 2">
+                        <img src="works/other/TaskApp/Image3.jpg" alt="Screenshot 3">
+                    </div>
+                    <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-details">
+                    <h2>Task App</h2>
+                    <p>
+                    I've always been using Notion/Google to keep track of my tasks, but I realized they weren't quite what I needed. I wanted full control - customizable tags, adjustable columns (and their contents), and even the ability to change color palettes. But none of the existing pre-made apps gave me all that flexibility.</p>
+                
+                    <p>So, I decided to build my own App, featuring all these options and even more.</p>
+                
+                    <p>I like adapting and finding solutions when the existing ones don't fit - even if it means spending countless hours learning completely new things. </p>
+                    <p><br><br>The name <i>JUNO</i> comes from a mix of inspirations:<br>
+                            • <b>JU</b> (pronounced you) + <b>NO</b> for Notes<br>
+                            • My cat's name, <b>JU</b>lia<b>NO</b><br>
+                            • And my own name, <b>JU</b>lia <b>NO</b>wak </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- Task App -->  
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
