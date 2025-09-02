@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const typed = new Typed('#typed-element', options);
     }
     
-// --- Work Page Filter and Modal Logic ---
+    // --- Work Page Filter and Modal Logic ---
     const filterContainer = document.querySelector('.work-filters');
     if (filterContainer) {
-        const workGrid = document.querySelector('.work-grid'); // do gridu?? chk ltr
+        const workGrid = document.querySelector('.work-grid');
         const filterBtns = filterContainer.querySelectorAll('.filter-btn');
         const workItems = document.querySelectorAll('.work-item');
         filterBtns.forEach(btn => {
@@ -147,5 +147,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // --- Tap-to-display on Mob ---
+    const workItems = document.querySelectorAll('.work-item');
+    if (workItems.length > 0) {
+        workItems.forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.stopPropagation();
+                const wasActive = this.classList.contains('is-active');
+                workItems.forEach(i => i.classList.remove('is-active'));
+                if (!wasActive) {
+                    this.classList.add('is-active');
+                }
+            });
+        });
+    }
+
+    const timelineItems = document.querySelectorAll('.team-history li');
+    if (timelineItems.length > 0) {
+        timelineItems.forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.stopPropagation();
+                const wasActive = this.classList.contains('is-active');
+                timelineItems.forEach(i => i.classList.remove('is-active'));
+                if (!wasActive) {
+                    this.classList.add('is-active');
+                }
+            });
+        });
+    }
+
+    // general click listener
+    document.addEventListener('click', function() {
+        if (workItems.length > 0) {
+            workItems.forEach(i => i.classList.remove('is-active'));
+        }
+        if (timelineItems.length > 0) {
+            timelineItems.forEach(i => i.classList.remove('is-active'));
+        }
+    });
 
 });

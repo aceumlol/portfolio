@@ -512,7 +512,8 @@ About Page Styles
     transition: all 0.3s ease-out;
 }
 
-.team-history li:hover::after {
+.team-history li:hover::after,
+.team-history li.is-active::after {
     border-color: var(--highlight-color);
     box-shadow: 0 0 15px 3px rgba(170, 93, 200, 0.4);
 }
@@ -546,7 +547,8 @@ About Page Styles
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.team-history li:hover::before {
+.team-history li:hover::before,
+.team-history li.is-active::before {
     opacity: 1;
     transform: translateY(-50%) translateY(0) scale(1);
 }
@@ -889,16 +891,19 @@ Work Page Styles
     transition: opacity 0.4s ease;
 }
 
-.work-item:hover {
+.work-item:hover,
+.work-item.is-active {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.work-item:hover .overlay {
+.work-item:hover .overlay,
+.work-item.is-active .overlay {
     opacity: 1;
 }
 
-.work-item:hover img {
+.work-item:hover img,
+.work-item.is-active img {
     transform: scale(1.05);
     filter: blur(2px);
 }
