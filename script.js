@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Mobile Navigation (Hamburger Menu) ---
+    // --- Mobile Hamburger ---
     const navToggle = document.querySelector('.mobile-nav-toggle');
     const primaryNav = document.getElementById('primary-navigation');
 
