@@ -347,19 +347,12 @@ nav ul li a:not(.nav-contact-button):hover::after {
     transform: translateX(30px);
 }
 
-.picture-placeholder {
+.hello-image img {
     width: 100%;
     height: 100%;
-    background-color: #b8b7bf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #6a667d;
-    font-weight: 500;
+    object-fit: cover;
     border-radius: 8px;
 }
-
 
 /*
 ========================================
@@ -1119,8 +1112,8 @@ Responsive Styles
         transform: translateX(0);
         margin: 0 auto;
         order: 1;
-        width: 220px;
-        height: 290px;
+        width: 260px;
+        height: 345px;
     }
 
     .hello-text h1, .animation-container {
